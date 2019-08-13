@@ -10,6 +10,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableHystrix
+
 public class AppOrder {
 
     public static void main(String[] args) {

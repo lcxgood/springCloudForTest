@@ -15,6 +15,7 @@
     <modules>
         <module>springCloud-basics-eureka</module>
         <module>springCloud-basics-zuul</module>
+        <module>springCloudbasics-springConfig</module>
     </modules>
 
 </project>

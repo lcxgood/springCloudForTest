@@ -22,6 +22,11 @@ public class OrderController {
         return result;
     }
 
+    @RequestMapping("/")
+    public String index() {
+        return "我是订单服务项目";
+    }
+
     @Bean
     @LoadBalanced
     RestTemplate restTemplate() {
