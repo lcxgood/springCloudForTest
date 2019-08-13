@@ -43,3 +43,6 @@ hystrix:
       execution:
        timeout:
         enabled: false
+
+swagger:
+  base-package: com.liuchenxi.api

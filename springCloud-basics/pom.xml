@@ -15,7 +15,8 @@
     <modules>
         <module>springCloud-basics-eureka</module>
         <module>springCloud-basics-zuul</module>
-        <module>springCloudbasics-springConfig</module>
+        <module>springCloud-basics-springConfig</module>
+        <module>springCloud-basics-swagger</module>
     </modules>
 
 </project>

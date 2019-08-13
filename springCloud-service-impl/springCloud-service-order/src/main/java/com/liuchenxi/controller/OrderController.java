@@ -1,5 +1,7 @@
 package com.liuchenxi.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
@@ -8,9 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
+@Api("订单基础接口")
 public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
+
+
 
     @RequestMapping("/getOrder")
     public String getOrder() {
@@ -22,6 +27,7 @@ public class OrderController {
         return result;
     }
 
+    @ApiOperation("hello")
     @RequestMapping("/")
     public String index() {
         return "我是订单服务项目";
